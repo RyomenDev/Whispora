@@ -54,21 +54,23 @@ export const LatestPostCard = ({ item }) => (
   </div>
 );
 
-// export const CompactCard = ({ item }) => (
-//   <div className="bg-white rounded-xl p-4 flex flex-col justify-between h-full shadow hover:shadow-xl border border-emerald-100">
-//     <img
-//       src={item.image}
-//       alt={item.title}
-//       className="border-4 border-red-500 w-52 h-28 object-cover rounded-lg mb-2"
-//     />
-//     <div>
-//       <h4 className="text-sm font-semibold text-emerald-800 line-clamp-1">
-//         {item.title}
-//       </h4>
-//       <p className="text-xs text-gray-500">{item.views} Views</p>
-//     </div>
-//   </div>
-// );
+export const EditorsPickCard = ({ item }) => (
+  <div className="min-w-[300px] max-w-sm flex-shrink-0 bg-white rounded-xl shadow-lg border border-emerald-100 transition hover:scale-[1.02]">
+    <img
+      src={item.image}
+      alt={item.title}
+      className="w-full h-44 object-cover rounded-t-xl"
+    />
+    <div className="p-4">
+      <h3 className="text-lg font-bold text-emerald-900 mb-2 line-clamp-2">
+        {item.title}
+      </h3>
+      <div className="text-sm text-gray-600 line-clamp-3">
+        <MarkdownRenderer>{item.description}</MarkdownRenderer>
+      </div>
+    </div>
+  </div>
+);
 
 export const SideCard = ({ item }) => (
   <div className="bg-white rounded-xl shadow-md flex flex-col justify-between h-full border border-emerald-100">
