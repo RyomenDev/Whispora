@@ -1,6 +1,6 @@
 const AboutUsData = {
   email: "+91 XXXX XXXXXX",
-  number: "XXX@stepSmart.com",
+  number: "XXX@sWhispora.com",
   socialMediaLinks: [
     {
       name: "LinkedIn",

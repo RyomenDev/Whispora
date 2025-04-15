@@ -1,19 +1,26 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import RotatingGearIcon from "../../assets/svgJSX/RotatingGearIcon.jsx";
 
 const HeaderComponent = ({ data }) => {
   const { companyName, headerOptions } = data;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/"); // This navigates to the home page
+  };
   return (
     <header className="w-full sticky top-0 left-0 z-50 bg-[#296949]/80 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-2 py-3 flex justify-between items-center">
         {/* Company Name */}
-        <h1 className="text-3xl font-extrabold tracking-wide text-white drop-shadow-md font-[Poppins]">
-          {companyName}
-        </h1>
+        <div onClick={handleLogoClick}>
+          <h1 className="text-3xl font-extrabold tracking-wide text-white drop-shadow-md font-[Poppins] ">
+            {companyName}
+          </h1>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 font-[Poppins] md:text-2xl">

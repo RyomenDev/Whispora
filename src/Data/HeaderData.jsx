@@ -1,5 +1,5 @@
 const HeaderData = {
-  companyName: "StepSmart",
+  companyName: "Whispora",
   headerOptions: [
     // {
     //   key: "Jobs",
@@ -16,6 +16,10 @@ const HeaderData = {
     {
       key: "Register",
       path: "register",
+    },
+    {
+      key: "Discover",
+      path: "discover",
     },
     {
       key: "About Us",

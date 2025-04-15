@@ -11,7 +11,7 @@ const FooterData = {
     buttonText: "JOIN NOW",
   },
   copyright: {
-    text: "© All rights reserved. Content on this platform belongs to StepSmart unless otherwise stated.",
+    text: "© All rights reserved. Content on this platform belongs to Whispora unless otherwise stated.",
     privacyPolicy: {
       label: "Privacy Policy",
       link: "#",
@@ -19,7 +19,7 @@ const FooterData = {
   },
   devSupport: {
     label: "Built & Maintained by",
-    name: "StepSmart Studio",
+    name: "Whispora Studio",
   },
 };
 
