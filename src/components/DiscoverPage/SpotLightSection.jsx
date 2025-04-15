@@ -37,7 +37,7 @@ const SpotLightSection = () => (
 
       {/* Right CompactCards */}
       <div className="md:col-span-1">
-        <div className="grid grid-cols-2 md:flex md:flex-col gap-4 md:space-y-4 overflow-y-auto h-[320px] md:h-[575px] pr-1">
+        <div className="grid grid-cols-2 md:flex md:flex-col gap-4 md:space-y-4 overflow-y-auto h-[320px] md:h-[580px] pr-1">
           {rightCardsData?.map((item, index) => (
             <CompactCard key={index} item={item} />
           ))}

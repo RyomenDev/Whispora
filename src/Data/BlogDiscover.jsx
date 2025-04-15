@@ -10,7 +10,8 @@ Some key highlights include:
 - **Smart testing tools**: AI optimizes testing by automatically finding bugs, ensuring faster delivery.
 
 The future of web development is heavily influenced by AI, and this blog dives deep into how developers can utilize these tools to stay ahead of the curve. Whether you’re a frontend or backend developer, integrating AI into your workflow will unlock new possibilities.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
     date: "April 10, 2025",
     views: "14.2k",
     category: "AI",
@@ -34,7 +35,8 @@ Key tricks include:
 - **Optimizing loops**: Learn how to loop through large datasets efficiently.
 
 This blog also highlights common mistakes developers make and provides solutions to overcome them. Whether you’re new to JavaScript or an experienced developer, these tricks will elevate your coding game to the next level.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://contentstatic.techgig.com/thumb/msid-114166913,width-800,resizemode-4/10-JavaScript-concepts-for-Node-developers-to-learn.jpg?53276",
     date: "March 28, 2025",
     views: "11.6k",
     category: "JavaScript",
@@ -56,7 +58,8 @@ Topics covered include:
 - **Virtualization**: Efficiently render large lists and tables by only displaying visible items.
 
 React performance optimization is an essential skill, especially as your app grows in complexity. This blog provides real-world examples and practical solutions that you can apply today to improve your React apps.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://sourcebae.com/blog/wp-content/uploads/2023/08/Benefits-of-ReactJS.jpg",
     date: "February 20, 2025",
     views: "12.4k",
     category: "React",
@@ -77,9 +80,10 @@ Key points discussed:
 - **Cost savings**: By using AI, you save time and money spent on purchasing stock images.
 
 This blog will teach you how AI is revolutionizing content creation and how you can use it to improve your blog's visual appeal while saving time.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://www.atomcamp.com/wp-content/uploads/2024/02/AI-Everywhere-blog-header.png",
     date: "April 08, 2025",
-    views: "9.3k",
+    views: "19.3k",
     category: "AI Tools",
     author: "Emily Jordan",
     tags: ["AI", "Design", "Automation"],
@@ -98,7 +102,8 @@ This blog will help you:
 - **Configure CloudFront** for delivering content faster through a global CDN.
 
 AWS is a powerful platform for scalable deployments, and this blog provides hands-on advice for getting your apps deployed efficiently. Learn how to make the most of AWS’s features and improve the reliability and performance of your web applications.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://careertraining.csusm.edu/common/images/2/22994/Certified-AWS-Cloud-Practitioner-935x572.jpg",
     date: "March 15, 2025",
     views: "10.1k",
     category: "DevOps",
@@ -120,14 +125,15 @@ This blog covers:
 - **Common mistakes**: Learn how to avoid common pitfalls when using closures in JavaScript.
 
 Closures are a powerful feature in JavaScript, and this blog makes it easy to understand and apply them to your codebase.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://st.depositphotos.com/1518767/4298/i/450/depositphotos_42984257-stock-photo-javascript-against-futuristic-black-and.jpg",
     date: "March 02, 2025",
     views: "9.1k",
     category: "JavaScript",
     author: "Nina Patel",
     tags: ["JavaScript", "Closures", "Functions"],
     isRecommended: true,
-    isEditorPick: false,
+    isEditorPick: true,
     readingTime: "5 min",
   },
   {
@@ -141,7 +147,8 @@ This blog discusses:
 - **Benefits of WebSockets**: Why they're superior for real-time apps over traditional HTTP requests.
 
 Learn how to leverage WebSockets in your applications to create seamless, real-time user experiences.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://stream-blog-v2.imgix.net/blog/wp-content/uploads/431a7c17f09464a49117bd192cf3d608/WebSocket-Connections-1200x630px.png?auto=format&auto=compress",
     date: "April 10, 2025",
     views: "6.7k",
     category: "Real-Time",
@@ -162,14 +169,15 @@ Key principles of minimalist design:
 - **Less is more**: Eliminate unnecessary elements for a streamlined look.
 
 Minimalist design is becoming increasingly popular across various industries. This blog helps you understand how to implement minimalist principles in your own design projects.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://www.gangofdesigners.com/wp-content/uploads/2024/07/sagarasde.jpg",
     date: "February 01, 2025",
     views: "12.5k",
     category: "UI/UX",
     author: "Sana Rafiq",
     tags: ["Design", "UI/UX", "Minimalism"],
     isTrending: true,
-    isEditorPick: true,
+    isEditorPick: false,
     readingTime: "4 min",
   },
   {
@@ -183,7 +191,8 @@ In this blog, you’ll learn:
 - **MongoDB integration**: How to query MongoDB with GraphQL.
 
 By the end of this blog, you'll have the knowledge needed to implement your own GraphQL server and begin using it in production environments.`,
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1676711482279/b751c42b-150b-4285-8831-29b731b5ffe8.png",
     date: "March 30, 2025",
     views: "6.2k",
     category: "Backend",

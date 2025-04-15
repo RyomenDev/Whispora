@@ -2,7 +2,9 @@ import SectionHeader from "./SectionHeader";
 import { BlogDiscoverData as blogDiscover } from "../../Data";
 import { Card } from "./Cards";
 
-const trendingBlogs = blogDiscover.filter((blog) => blog.isTrending);
+const trendingBlogs = blogDiscover
+  .filter((blog) => blog.isTrending)
+  .slice(0, 3);
 
 const TrendingSection = () => (
   <div className="">

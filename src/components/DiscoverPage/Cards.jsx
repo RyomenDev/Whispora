@@ -22,23 +22,56 @@ export const Card = ({ item }) => (
 );
 
 export const CompactCard = ({ item }) => (
-  <div className="bg-white rounded-xl p-4 flex flex-col justify-between h-full shadow hover:shadow-xl border border-emerald-100">
+  <div className="bg-white rounded-xl p-4 flex flex-col justify-between w-52 h-56 shadow hover:shadow-xl border border-emerald-100">
     <img
       src={item.image}
       alt={item.title}
       className="w-full h-28 object-cover rounded-lg mb-2"
     />
-    <div>
-      <h4 className="text-sm font-semibold text-emerald-800 line-clamp-1">
+    <div className="flex flex-col justify-between flex-grow">
+      <h4 className="text-sm font-semibold text-emerald-800 line-clamp-2 mb-1">
         {item.title}
       </h4>
-      <p className="text-xs text-gray-500">{item.views} Views</p>
+      <p className="text-xs text-gray-500 mt-auto">{item.views} Views</p>
     </div>
   </div>
 );
 
+export const LatestPostCard = ({ item }) => (
+  <div className="flex gap-4 items-start bg-white rounded-xl shadow border border-gray-100 p-4">
+    <img
+      src={item.image}
+      alt={item.title}
+      className="w-20 h-20 object-cover rounded"
+    />
+    <div>
+      <h4 className="text-md font-semibold text-emerald-900">{item.title}</h4>
+      <p className="text-xs text-gray-500">{item.date}</p>
+      <div className="text-sm text-gray-600 line-clamp-2">
+        <MarkdownRenderer>{item.description}</MarkdownRenderer>
+      </div>
+    </div>
+  </div>
+);
+
+// export const CompactCard = ({ item }) => (
+//   <div className="bg-white rounded-xl p-4 flex flex-col justify-between h-full shadow hover:shadow-xl border border-emerald-100">
+//     <img
+//       src={item.image}
+//       alt={item.title}
+//       className="border-4 border-red-500 w-52 h-28 object-cover rounded-lg mb-2"
+//     />
+//     <div>
+//       <h4 className="text-sm font-semibold text-emerald-800 line-clamp-1">
+//         {item.title}
+//       </h4>
+//       <p className="text-xs text-gray-500">{item.views} Views</p>
+//     </div>
+//   </div>
+// );
+
 export const SideCard = ({ item }) => (
-  <div className="bg-white rounded-xl shadow-md flex flex-col justify-between h-full">
+  <div className="bg-white rounded-xl shadow-md flex flex-col justify-between h-full border border-emerald-100">
     <img
       src={item.image}
       alt={item.title}
@@ -59,7 +92,7 @@ export const SpotlightCard = ({ item }) => (
     <img
       src={item.image}
       alt={item.title}
-      className="w-full h-48 object-cover"
+      className="w-full h-56 object-cover"
       loading="lazy"
     />
 
