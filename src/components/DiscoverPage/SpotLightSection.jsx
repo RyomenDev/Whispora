@@ -2,13 +2,21 @@ import SectionHeader from "./SectionHeader";
 import { BlogDiscoverData as blogDiscover } from "../../Data";
 import { SideCard, SpotlightCard, CompactCard } from "./Cards";
 
+const leftCardsData = blogDiscover
+  .filter((blog) => blog.isTrending)
+  .slice(0, 2);
+const spotlightCardData = blogDiscover.find((blog) => blog.isFeatured);
+const rightCardsData = blogDiscover.filter(
+  (blog) => blog.isRecommended && blog.id !== spotlightCardData?.id
+);
+
 const SpotLightSection = () => (
   <div className="px-4 sm:px-6 lg:px-8">
     <SectionHeader title="SpotLight" />
 
     {/* Small devices: SideCards in a row */}
     <div className="md:hidden grid grid-cols-2 gap-4 mb-6">
-      {blogDiscover.left.map((item, index) => (
+      {leftCardsData?.map((item, index) => (
         <SideCard key={index} item={item} />
       ))}
     </div>
@@ -17,21 +25,20 @@ const SpotLightSection = () => (
     <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
       {/* Left SideCards (hidden on small) */}
       <div className="hidden md:flex md:flex-col justify-between md:col-span-1 space-y-4">
-        {blogDiscover.left.map((item, index) => (
+        {leftCardsData?.map((item, index) => (
           <SideCard key={index} item={item} />
         ))}
       </div>
 
       {/* Spotlight Card */}
       <div className="md:col-span-3">
-        <SpotlightCard item={blogDiscover.spotlight[0]} />
+        <SpotlightCard item={spotlightCardData} />
       </div>
 
       {/* Right CompactCards */}
       <div className="md:col-span-1">
-        {/* Scrollable container for both mobile and desktop */}
-        <div className="grid grid-cols-2 md:flex md:flex-col gap-4 md:space-y-4 overflow-y-auto h-[300px] md:h-[500px] pr-1">
-          {blogDiscover.right.map((item, index) => (
+        <div className="grid grid-cols-2 md:flex md:flex-col gap-4 md:space-y-4 overflow-y-auto h-[320px] md:h-[575px] pr-1">
+          {rightCardsData?.map((item, index) => (
             <CompactCard key={index} item={item} />
           ))}
         </div>

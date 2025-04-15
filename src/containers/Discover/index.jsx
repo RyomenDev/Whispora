@@ -1,5 +1,4 @@
 
-import SectionHeader from "../../components/DiscoverPage/SectionHeader";
 import SpotlightSection from "../../components/DiscoverPage/SpotlightSection";
 import TrendingSection from "../../components/DiscoverPage/TrendingSection";
 import FeaturedSection from "../../components/DiscoverPage/FeaturedSection";

@@ -1,11 +1,13 @@
 import SectionHeader from "./SectionHeader";
 import { BlogDiscoverData as blogDiscover } from "../../Data";
 
+const latestBlogs = blogDiscover.filter((blog) => blog.isLatest);
+
 const LatestPostsSection = () => (
   <div>
     <SectionHeader title="Latest Posts" />
     <div className="space-y-6">
-      {blogDiscover?.latest?.map((item, index) => (
+      {latestBlogs?.map((item, index) => (
         <div
           key={index}
           className="flex gap-4 items-start bg-white rounded-xl shadow border border-gray-100 p-4"
