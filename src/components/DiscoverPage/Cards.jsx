@@ -175,7 +175,9 @@ export const FeatureCard = ({ item }) => (
         </div>
       </div>
 
-      <p className="text-gray-600 line-clamp-4">{item?.description}</p>
+      <div className="text-gray-600 line-clamp-4">
+        <MarkdownRenderer>{item.description}</MarkdownRenderer>
+      </div>
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2">
