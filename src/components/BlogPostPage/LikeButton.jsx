@@ -11,7 +11,7 @@ const LikeButton = ({ postId, likeCount }) => {
   };
 
   return (
-    <div className="flex items-center gap-2 mb-6">
+    <div className="flex items-center gap-2">
       <button
         onClick={toggleLike}
         className={`text-red-500 transition ${
