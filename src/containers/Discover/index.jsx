@@ -1,11 +1,11 @@
 import HeroSection from "../../components/DiscoverPage/HeroSection.jsx";
-import SpotlightSection from "../../components/DiscoverPage/SpotlightSection";
-import TrendingSection from "../../components/DiscoverPage/TrendingSection";
-import FeaturedSection from "../../components/DiscoverPage/FeaturedSection";
-import EditorsPickSection from "../../components/DiscoverPage/EditorsPickSection";
-import MostViewedSection from "../../components/DiscoverPage/MostViewedSection";
-import LatestPostsSection from "../../components/DiscoverPage/LatestPostsSection";
-import RecommendedSection from "../../components/DiscoverPage/RecommendedSection";
+import SpotlightSection from "../../components/DiscoverPage/SpotLightSection.jsx";
+import TrendingSection from "../../components/DiscoverPage/TrendingSection.jsx";
+import FeaturedSection from "../../components/DiscoverPage/FeaturedSection.jsx";
+import EditorsPickSection from "../../components/DiscoverPage/EditorsPickSection.jsx";
+import MostViewedSection from "../../components/DiscoverPage/MostViewedSection.jsx";
+import LatestPostsSection from "../../components/DiscoverPage/LatestPostsSection.jsx";
+import RecommendedSection from "../../components/DiscoverPage/RecommendedSection.jsx";
 
 const Discover = () => {
   return (

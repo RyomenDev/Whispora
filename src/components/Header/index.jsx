@@ -22,7 +22,7 @@ const HeaderComponent = ({ data }) => {
           onClick={handleLogoClick}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <img src="/logo.png" alt="Logo" className="h-8 w-8 drop-shadow-md" />
+          <img src="/logo.png" alt="Logo" className="h-8 w-8 drop-shadow-md rounded-xl" />
           <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide text-white drop-shadow-md font-[Poppins]">
             {companyName}
           </h1>
