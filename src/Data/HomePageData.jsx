@@ -1,11 +1,18 @@
-import HERO_BG from "../assets/images/hero_bg.jpg";
-import ORGANIZATION_IMG from "../assets/images/about.jpg";
+import HERO_BG from "../assets/images/EmeraldBg.png";
+import course_1 from "../assets/images/course_1.jpg";
+import course_2 from "../assets/images/course_2.jpg";
+import course_3 from "../assets/images/course_3.jpg";
+import course_4 from "../assets/images/course_4.jpg";
 
 import { FaRobot, FaUserTie, FaBookOpen, FaChartLine } from "react-icons/fa";
-import img1 from "../assets/images/course_1.jpg";
-import img2 from "../assets/images/course_2.jpg";
-import img3 from "../assets/images/course_3.jpg";
-import img4 from "../assets/images/course_4.jpg";
+import {
+  Lightbulb,
+  DollarSign,
+  Users,
+  BookOpen,
+  Archive,
+  Globe,
+} from "lucide-react";
 
 const HomePageData = {
   hero: {
@@ -16,125 +23,96 @@ const HomePageData = {
       "Join our community and get access to tailored mentorship, structured courses, and a supportive network to accelerate your career.",
     ctaText: "Get Started",
     ctaLink: "#",
-  },
-  organization: {
-    title: "The Organisation",
-    intro:
-      "UNNAT - EUROPE Unnat provides the platform for students and professionals that allows direct interaction. The platform will guide the students in unconventional professions.",
-    points: [
-      "Connecting the enthusiasts with professionals from the field.",
-      "Building a knowledge repository filled with diverse experiences.",
-      "Constructing a community of likeminded people and evolving the profession.",
+    cards: [
+      {
+        title: "12 Illustration Styles Every Illustrator Should Know",
+        description: "Lorem ipsum dolor sit amet consectetur...",
+        image: course_1,
+      },
+      {
+        title: "Mastering Digital Brushes",
+        description: "How to create texture and depth...",
+        image: course_2,
+      },
+      {
+        title: "Color Theory Basics",
+        description: "Understanding hues and contrast...",
+        image: course_3,
+      },
+      {
+        title: "Theory Basics",
+        description: "Understanding hues and contrast...",
+        image: course_4,
+      },
+      {
+        title: "Color",
+        description: "Understanding hues and contrast...",
+        image: course_1,
+      },
     ],
-    closing: "Because we believe in making learning accessible.",
-    image: ORGANIZATION_IMG,
   },
+
   featuresData: [
     {
       icon: <FaRobot size={40} className="text-blue-600" />,
-      img: img1,
-      title: "Mock Interviews",
+      img: course_1,
+      title: "AI-Powered Recommendations",
       description:
-        "Practice with our interviewer who adapts to your responses and simulates real interview conditions.",
+        "Discover personalized blog content based on your interests using our intelligent recommendation system.",
     },
     {
       icon: <FaUserTie size={40} className="text-purple-600" />,
-      img: img2,
-      title: "Expert Mentoring",
+      img: course_2,
+      title: "Expert Contributors",
       description:
-        "Connect with industry professionals who provide personalized guidance and insider knowledge.",
+        "Read insightful articles written by experienced developers, designers, and industry professionals.",
     },
     {
       icon: <FaBookOpen size={40} className="text-green-600" />,
-      img: img3,
-      title: "Interactive Courses",
+      img: course_3,
+      title: "In-Depth Tutorials",
       description:
-        "Learn interview techniques through engaging, interactive courses designed by industry experts.",
+        "Explore comprehensive how-to guides and tutorials across various tech topics, frameworks, and tools.",
     },
     {
       icon: <FaChartLine size={40} className="text-yellow-500" />,
-      img: img4,
-      title: "Real-Time Feedback",
+      img: course_4,
+      title: "Trending Insights",
       description:
-        "Receive instant analysis of your performance with actionable insights to improve your skills.",
+        "Stay updated with the latest trends, top tools, and community picks through real-time analytics.",
     },
   ],
-  testimonials: [
+
+  featuredData: [
     {
-      name: "Ananya Sharma-1",
-      feedback:
-        "The mentors here genuinely care. The one-on-one sessions gave me clarity and direction in my software career.",
-      role: "Software Engineer Intern at Google",
+      title: "Publish Your Passions",
+      desc: "Start a blog about what you love — from photography to poetry. You're in control.",
+      icon: <Lightbulb size={32} />,
     },
     {
-      name: "Ananya Sharma-2",
-      feedback:
-        "The mentors here genuinely care. The one-on-one sessions gave me clarity and direction in my software career.",
-      role: "Software Engineer Intern at Google",
+      title: "Earn Money",
+      desc: "Monetize your blog through ads, subscriptions, or sponsored content easily.",
+      icon: <DollarSign size={32} />,
     },
     {
-      name: "Ravi Verma-1",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
+      title: "Know Your Audience",
+      desc: "Get real-time insights about who reads your blog and what they love most.",
+      icon: <Users size={32} />,
     },
     {
-      name: "Ravi Verma-2",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
+      title: "Hang Onto Your Memories",
+      desc: "Safely store your ideas, stories, and experiences — forever.",
+      icon: <Archive size={32} />,
     },
     {
-      name: "Ravi Verma-3",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
+      title: "Learn and Grow",
+      desc: "Access premium content, creator tips, and AI-powered writing suggestions.",
+      icon: <BookOpen size={32} />,
     },
     {
-      name: "Ravi Verma-4",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
-    },
-    {
-      name: "Ravi Verma-5",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
-    },
-    {
-      name: "Ravi Verma-6",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
-    },
-    {
-      name: "Ravi Verma-7",
-      feedback:
-        "The courses are beginner-friendly and well structured. I was able to land my first internship within 3 months.",
-      role: "Frontend Developer Intern",
-    },
-  ],
-  teamMembers: [
-    {
-      name: "Sanket",
-      role: "Product Manager",
-      img: "https://randomuser.me/api/portraits/men/65.jpg",
-    },
-    {
-      name: "Ankit",
-      role: "Designer",
-      img: "https://randomuser.me/api/portraits/men/75.jpg",
-    },
-    {
-      name: "Achutya",
-      role: "Investment Planner",
-      img: "https://randomuser.me/api/portraits/men/79.jpg",
-    },
-    {
-      name: "Member-4",
-      role: "Financial Analyst",
-      img: "https://randomuser.me/api/portraits/men/78.jpg",
+      title: "Explore Global Stories",
+      desc: "Dive into blogs from around the world and connect with diverse perspectives and cultures.",
+      icon: <Globe size={32} />,
     },
   ],
 };

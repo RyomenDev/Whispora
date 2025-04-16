@@ -1,16 +1,10 @@
 // import { signupApi } from "../../../api";
 import SignUpForm from "./SignUpForm";
-import GoogleSignInButton from "../GoogleButton.jsx";
+import { GoogleSignInButton } from "../../../utility";
 
 const RightSection = () => {
   const handleSubmit = async (formData) => {
-    // try {
-    //   const response = await signupApi(formData);
-    //   console.log(response);
-    //   //   alert(response.message);
-    // } catch (error) {
-    //   console.log("Something went Wrong", error.message);
-    // }
+    alert(`Registration Successful`);
   };
   const handleGoogleSignUp = () => {};
   return (
@@ -30,10 +24,8 @@ const RightSection = () => {
           <hr className="flex-grow border-gray-300" />
         </div>
 
-        {/* SignUpForm Component */}
         <SignUpForm onSignUp={handleSubmit} />
 
-        {/* Already have an account */}
         <p className="mt-3 text-gray-600 flex justify-center">
           Already have an account?{" "}
           <a href="/signin" className="text-red-500 hover:underline">

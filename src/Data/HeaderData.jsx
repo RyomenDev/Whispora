@@ -1,31 +1,15 @@
 const HeaderData = {
   companyName: "Whispora",
-  headerOptions: [
-    // {
-    //   key: "Jobs",
-    //   path: "#",
-    // },
-    // {
-    //   key: "Blog",
-    //   path: "#",
-    // },
-    {
-      key: "Login",
-      path: "login",
-    },
-    {
-      key: "Register",
-      path: "register",
-    },
-    {
-      key: "Discover",
-      path: "discover",
-    },
-    {
-      key: "About Us",
-      path: "#Contact_Section",
-    },
-  ],
+  headerOptions: {
+    authHeaders: [
+      { key: "Login", path: "login" },
+      { key: "Register", path: "register" },
+    ],
+    sectionHeaders: [
+      { key: "Discover", path: "discover" },
+      { key: "About", path: "#Contact_Section" },
+    ],
+  },
 };
 
 export default HeaderData;

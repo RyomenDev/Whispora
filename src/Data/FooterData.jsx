@@ -1,13 +1,13 @@
 const FooterData = {
   branding: {
-    title: "StepSmart",
+    title: "Whispora",
     tagline:
       "Empowering students with mentorship, curated resources, and career support.",
   },
   cta: {
     heading: "GET STARTED",
     description:
-      "Explore mentorships, access premium learning materials, and unlock job opportunities. Submit your request and we’ll get back within an hour during working hours.",
+      "Explore expert blogs, access premium learning resources, and stay updated with the latest in tech. Submit your request and we’ll get back within an hour during working hours.",
     buttonText: "JOIN NOW",
   },
   copyright: {
@@ -19,7 +19,7 @@ const FooterData = {
   },
   devSupport: {
     label: "Built & Maintained by",
-    name: "Whispora Studio",
+    name: "Whispora",
   },
 };
 

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import InputField from "../InputField";
-import PasswordField from "../PasswordField";
+import { InputField, PasswordField } from "../../../utility";
 
 const SignUpForm = ({ onSignUp }) => {
   const [formData, setFormData] = useState({

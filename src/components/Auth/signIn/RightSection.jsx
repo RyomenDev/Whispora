@@ -1,35 +1,14 @@
-// import { googleSignIn, emailPasswordSignIn } from "../../../api";
-import GoogleSignInButton from "../GoogleButton.jsx";
+
+import {GoogleSignInButton} from "../../../utility";
 import SignInForm from "./SignInForm";
-// import conf from "../../../conf/conf.js";
-// const SERVER_URL = conf.SERVER_URL;
 
 const RightSection = () => {
   const handleGoogleSignIn = async () => {
-    // try {
-    //   console.log("Redirecting to Google OAuth...");
-    //   if (!SERVER_URL) {
-    //     throw new Error("SERVER_URL is not defined.");
-    //   }
-    //   window.location.href = `${SERVER_URL}/auth/oauth/login/google-oauth2/`;
-    // } catch (err) {
-    //   console.error("Google Sign-In Error:", err.message);
-    // }
+    alert(`Google SignIn`);
   };
 
   const handleEmailPasswordSignIn = async (email, password) => {
-    // try {
-    //   const response = await emailPasswordSignIn(email, password);
-    //   //   alert(response.message);
-    //   console.log(response.data);
-    //   const { access_token, refresh_token } = response.data;
-    //   localStorage.setItem("accessToken", access_token);
-    //   localStorage.setItem("refreshToken", refresh_token);
-    // } catch (err) {
-    //   console.error("Sign-in failed:", err.message);
-    //   //   alert("Something went wrong. Please try again.");
-    //   throw err;
-    // }
+    alert(`Email: ${email}, Password: ${password}`);
   };
 
   return (

@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types";
 import { AiOutlineWarning } from "react-icons/ai";
 
@@ -16,5 +15,3 @@ ErrorDisplay.propTypes = {
 };
 
 export default ErrorDisplay;
-
-

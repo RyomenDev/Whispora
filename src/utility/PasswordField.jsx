@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import PasswordChecklist from "./signUp/PasswordChecklist";
+import PasswordChecklist from "./PasswordChecklist";
 import ErrorDisplay from "./ErrorDisplay.jsx";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 

@@ -52,59 +52,25 @@ export default function SocialMedia() {
   return (
     <SocialMediaGrid>
       {socialMediaLinks.map((media, index) => (
-        <a
+        <span
           key={index}
-          href={media.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={media.name || "social media link"}
+          aria-label={media.name || "social media icon"}
+          className="pointer-events-none"
         >
           <IconWrapper backgroundColor={media.backgroundColor} theme="#ffffff">
             <Icon icon={media.icon} />
           </IconWrapper>
-        </a>
+        </span>
       ))}
     </SocialMediaGrid>
   );
 }
 
-// import React from "react";
-// import { Icon } from "@iconify/react";
-// import { AboutUsData } from "../Data";
-// import styled from "styled-components";
-
-// const IconWrapper = styled.span`
-//   display: inline-flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 12px;
-//   border-radius: 50%;
-//   background-color: ${(props) => props.backgroundColor};
-//   transition: background-color 0.3s ease-in;
-
-//   &:hover {
-//     background-color: ${({ theme }) => theme};
-//   }
-
-//   svg {
-//     color: white;
-//     font-size: 20px;
-//   }
-// `;
-
-// const SocialMediaContainer = styled.div`
-//   display: flex;
-//   gap: 16px;
-//   justify-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-// `;
-
 // export default function SocialMedia() {
 //   const { socialMediaLinks } = AboutUsData;
 
 //   return (
-//     <SocialMediaContainer>
+//     <SocialMediaGrid>
 //       {socialMediaLinks.map((media, index) => (
 //         <a
 //           key={index}
@@ -112,12 +78,13 @@ export default function SocialMedia() {
 //           target="_blank"
 //           rel="noopener noreferrer"
 //           aria-label={media.name || "social media link"}
+//           disable
 //         >
 //           <IconWrapper backgroundColor={media.backgroundColor} theme="#ffffff">
 //             <Icon icon={media.icon} />
 //           </IconWrapper>
 //         </a>
 //       ))}
-//     </SocialMediaContainer>
+//     </SocialMediaGrid>
 //   );
 // }
