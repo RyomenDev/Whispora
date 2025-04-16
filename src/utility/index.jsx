@@ -6,6 +6,8 @@ import GoogleSignInButton from "./GoogleButton.jsx";
 import SocialMedia from "./SocialMedia.jsx";
 import MarkdownRenderer from "./MarkdownRenderer.jsx";
 
+import useScreenSize from "./useScreenSize.jsx";
+
 export {
   ErrorDisplay,
   //
@@ -15,4 +17,6 @@ export {
   GoogleSignInButton,
   SocialMedia,
   MarkdownRenderer,
+  //
+  useScreenSize,
 };
