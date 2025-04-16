@@ -9,7 +9,9 @@ const RecommendedSection = () => (
     <SectionHeader title="Recommended for You" />
     <div className="flex space-x-5 overflow-x-auto scrollbar-hide pb-3">
       {recommendedBlogs?.map((item, index) => (
-        <CompactCard key={index} item={item} />
+        <div className=" w-52 h-56">
+          <CompactCard key={index} item={item} />
+        </div>
       ))}
     </div>
   </div>

@@ -1,4 +1,4 @@
-import {HeaderComponent} from "../../components";
+import HeaderComponent from "../../components/Header";
 import { HeaderData } from "../../Data";
 
 const HeaderContainer = () => {
