@@ -7,7 +7,7 @@ const SignUpPage = () => {
   const isMobile = useScreenSize();
   return (
     <>
-      <div className="h-screen w-screen bg-emerald-50 overflow-hidden">
+      <div className="h-screen w-screen overflow-hidden">
         {!isMobile ? (
           <div className="grid grid-cols-2 h-full w-full">
             <LeftSection />

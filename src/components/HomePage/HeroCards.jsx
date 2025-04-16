@@ -11,7 +11,6 @@ const HeroCards = ({ cards, index, direction, getVisibleCards }) => {
           const translateY = i * -30;
           const zIndex = cards.length - i;
 
-          // Only animate cards coming *into* the stack, skip the exiting one
           return (
             <motion.div
               key={`${card.title}-${(index + i) % cards.length}`}
