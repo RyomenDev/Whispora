@@ -1,6 +1,6 @@
 # Whispora – Blog Application
 
-![Image](https://github.com/user-attachments/assets/35e881a0-c0ed-4649-b6ca-824edecc7931)
+![Image](https://github.com/user-attachments/assets/e4f0ce1f-5dee-4277-a4d1-de87df1f3edf)
 
 <p align="center" style="display: flex; justify-content: center;">
     <img src="https://github.com/user-attachments/assets/720886a2-98d0-4320-9db0-1cbadcabf859" style="width: 45%; height: auto; margin-right: 10px;">
