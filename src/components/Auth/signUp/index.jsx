@@ -33,11 +33,11 @@ const SignUpPage = () => {
                 </h2>
               </div>
 
-              <div className="block md:hidden w-full max-w-sm mx-auto bg-emerald-100/80 p-6 rounded-2xl shadow-lg mt-8 relative z-10">
+              <div className="block md:hidden w-full max-w-sm mx-auto bg-emerald-100/90 p-6 rounded-2xl shadow-lg mt-8 relative z-10">
                 <RightSection />
               </div>
 
-              <div className="hidden md:flex items-center justify-center bg-emerald-100/80 relative z-10">
+              <div className="hidden md:flex items-center justify-center bg-emerald-100/90 relative z-10">
                 <div className="w-full max-w-sm p-6">
                   <RightSection />
                 </div>
