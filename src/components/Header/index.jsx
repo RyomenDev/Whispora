@@ -6,8 +6,8 @@ import RotatingGearIcon from "../../assets/svgJSX/RotatingGearIcon.jsx";
 const HeaderComponent = ({ data }) => {
   const { companyName, headerOptions } = data;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showAuthMenu, setShowAuthMenu] = useState(false); // For gear icon
-  const [showAuthMobile, setShowAuthMobile] = useState(false); // For mobile
+  const [showAuthMenu, setShowAuthMenu] = useState(false);
+  const [showAuthMobile, setShowAuthMobile] = useState(false);
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
@@ -28,7 +28,7 @@ const HeaderComponent = ({ data }) => {
           </h1>
         </div>
 
-        <nav className="hidden md:flex gap-8 items-center font-[Poppins] md:text-lg text-white relative">
+        <nav className="hidden md:flex gap-8 items-center font-[Poppins] md:text-lg  text-white relative">
           {headerOptions.sectionHeaders.map((option) =>
             option.path.startsWith("#") ? (
               <a
@@ -57,7 +57,7 @@ const HeaderComponent = ({ data }) => {
               <RotatingGearIcon color="#ffffff" />
             </button>
             {showAuthMenu && (
-              <div className="absolute right-0 top-10 bg-white text-gray-900 shadow-lg rounded-md py-2 w-32 z-50">
+              <div className="absolute right-0 top-10 bg-emerald-100 text-gray-900 shadow-lg rounded-md py-2 w-32 z-50">
                 {headerOptions.authHeaders.map((item) => (
                   <Link
                     key={item.key}
@@ -91,7 +91,7 @@ const HeaderComponent = ({ data }) => {
                   key={option.key}
                   href={option.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-4 py-2 rounded-lg hover:bg-emerald-100"
+                  className="block px-4 py-2 rounded-lg  hover:bg-emerald-100 text-emerald-800"
                 >
                   {option.key}
                 </a>
@@ -100,39 +100,40 @@ const HeaderComponent = ({ data }) => {
                   key={option.key}
                   to={option.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-4 py-2 rounded-lg hover:bg-emerald-100"
+                  className="block px-4 py-2 rounded-lg  hover:bg-emerald-100 text-emerald-800"
                 >
                   {option.key}
                 </Link>
               )
             )}
 
-            <button
+            <div
               onClick={() => setShowAuthMobile(!showAuthMobile)}
-              className="block w-full text-left text-emerald-800 font-semibold pt-2"
+              className="flex items-center justify-between cursor-pointer px-4 py-2 rounded-lg hover:bg-emerald-100 text-emerald-800 font-semibold"
             >
-              <button
-                className="h-8 w-8"
-                onClick={() => setShowAuthMenu((prev) => !prev)}
-              >
+              <span>Account Options</span>
+              <span className="h-6 w-6">
                 <RotatingGearIcon color="#000000" />
-              </button>
-            </button>
+              </span>
+            </div>
 
-            {showAuthMobile &&
-              headerOptions.authHeaders.map((item) => (
-                <Link
-                  key={item.key}
-                  to={item.path}
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    setShowAuthMobile(false);
-                  }}
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-100"
-                >
-                  {item.key}
-                </Link>
-              ))}
+            {showAuthMobile && (
+              <div className="pl-4 space-y-2 transition-all duration-300">
+                {headerOptions.authHeaders.map((item) => (
+                  <Link
+                    key={item.key}
+                    to={item.path}
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowAuthMobile(false);
+                    }}
+                    className="block px-4 py-2 text-sm rounded-md text-gray-700 hover:bg-emerald-100"
+                  >
+                    {item.key}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}

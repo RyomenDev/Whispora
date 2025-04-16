@@ -3,11 +3,11 @@ import Character_Png from "../../assets/images/Character_Png.png";
 const LeftSection = () => {
   return (
     <div
-      className="relative w-4/5 bg-gradient-to-br from-green-600 via-teal-500 to-emerald-400
+      className="relative w-4/5 bg-gradient-to-br from-green-600 via-teal-700 to-emerald-900
  flex flex-col items-start text-white p-8"
     >
       <div className="flex flex-col gap-12">
-        <h1 className="text-3xl font-bold mb-4">StepSmart</h1>
+        <h1 className="text-3xl font-bold mb-4">Whispora</h1>
         <p className="text-5xl font-semibold mb-6">
           Unlock a world of knowledge and possibilities!
         </p>

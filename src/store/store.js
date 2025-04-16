@@ -7,7 +7,7 @@ import { combineReducers } from "redux";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["auth"], // Only persist the auth state
+  whitelist: ["auth"],
 };
 
 const rootReducer = combineReducers({
@@ -22,7 +22,7 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: ["persist/PERSIST"], // Ignore this action type to avoid serializability check
+        ignoredActions: ["persist/PERSIST"],
       },
     }),
 });

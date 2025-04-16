@@ -1,8 +1,8 @@
 import HERO_BG from "../assets/images/EmeraldBg.png";
-import course_1 from "../assets/images/course_1.jpg";
-import course_2 from "../assets/images/course_2.jpg";
-import course_3 from "../assets/images/course_3.jpg";
-import course_4 from "../assets/images/course_4.jpg";
+import Stairs from "../assets/images/Stairs.png";
+import Elevation from "../assets/images/Elevation.png";
+import Curtain from "../assets/images/Curtain.jpg";
+import waterDrop from "../assets/images/waterDrop.png";
 
 import { FaRobot, FaUserTie, FaBookOpen, FaChartLine } from "react-icons/fa";
 import {
@@ -27,27 +27,37 @@ const HomePageData = {
       {
         title: "12 Illustration Styles Every Illustrator Should Know",
         description: "Lorem ipsum dolor sit amet consectetur...",
-        image: course_1,
+        image: Stairs,
+        author: "Jane Doe",
+        tags: ["Illustration", "Design", "Art"],
       },
       {
         title: "Mastering Digital Brushes",
         description: "How to create texture and depth...",
-        image: course_2,
+        image: Elevation,
+        author: "John Smith",
+        tags: ["Brushes", "Digital Art", "Tools"],
       },
       {
         title: "Color Theory Basics",
         description: "Understanding hues and contrast...",
-        image: course_3,
+        image: Curtain,
+        author: "Emily Clark",
+        tags: ["Color", "Design", "Theory"],
       },
       {
         title: "Theory Basics",
         description: "Understanding hues and contrast...",
-        image: course_4,
+        image: waterDrop,
+        author: "Alex Miller",
+        tags: ["Theory", "Colors", "Art"],
       },
       {
         title: "Color",
         description: "Understanding hues and contrast...",
-        image: course_1,
+        image: Stairs,
+        author: "Sara Lee",
+        tags: ["Color", "Art", "Design"],
       },
     ],
   },
@@ -55,28 +65,28 @@ const HomePageData = {
   featuresData: [
     {
       icon: <FaRobot size={40} className="text-blue-600" />,
-      img: course_1,
+      img: Stairs,
       title: "AI-Powered Recommendations",
       description:
         "Discover personalized blog content based on your interests using our intelligent recommendation system.",
     },
     {
       icon: <FaUserTie size={40} className="text-purple-600" />,
-      img: course_2,
+      img: Elevation,
       title: "Expert Contributors",
       description:
         "Read insightful articles written by experienced developers, designers, and industry professionals.",
     },
     {
       icon: <FaBookOpen size={40} className="text-green-600" />,
-      img: course_3,
+      img: Curtain,
       title: "In-Depth Tutorials",
       description:
         "Explore comprehensive how-to guides and tutorials across various tech topics, frameworks, and tools.",
     },
     {
       icon: <FaChartLine size={40} className="text-yellow-500" />,
-      img: course_4,
+      img: waterDrop,
       title: "Trending Insights",
       description:
         "Stay updated with the latest trends, top tools, and community picks through real-time analytics.",

@@ -1,5 +1,4 @@
-
-import {GoogleSignInButton} from "../../../utility";
+import { GoogleSignInButton } from "../../../utility";
 import SignInForm from "./SignInForm";
 
 const RightSection = () => {
@@ -30,7 +29,7 @@ const RightSection = () => {
         <SignInForm onSignIn={handleEmailPasswordSignIn} />
         <p className="text-center mt-6 text-gray-500">
           Don't Have an account?{" "}
-          <a href="/signup" className="text-red-500 hover:underline">
+          <a href="/register" className="text-red-500 hover:underline">
             Click Here.
           </a>
         </p>

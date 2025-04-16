@@ -63,6 +63,8 @@ const FeatureSection = ({ features }) => {
   );
 };
 
+export default FeatureSection;
+
 // const FeatureSection = () => {
 //   return (
 //     <section className="relative w-full py-20 px-6 bg-gradient-to-br from-emerald-950 via-black to-gray-900 text-white">
@@ -113,4 +115,4 @@ const FeatureSection = ({ features }) => {
 //   );
 // };
 
-export default FeatureSection;
+

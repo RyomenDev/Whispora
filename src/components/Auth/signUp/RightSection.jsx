@@ -28,7 +28,7 @@ const RightSection = () => {
 
         <p className="mt-3 text-gray-600 flex justify-center">
           Already have an account?{" "}
-          <a href="/signin" className="text-red-500 hover:underline">
+          <a href="/login" className="text-red-500 hover:underline">
             Click Here
           </a>
         </p>

@@ -11,11 +11,10 @@ const PasswordField = ({
   onChange,
   error,
   showChecklist,
-  passwordValidation = {}, // Default to an empty object to prevent undefined
+  passwordValidation = {}, 
 }) => {
   const [showPassword, setShowPassword] = useState(false);
-  const [isTypingPassword, setIsTypingPassword] = useState(false); // Track if user is typing
-
+  const [isTypingPassword, setIsTypingPassword] = useState(false); 
   const handleChange = (e) => {
     onChange(e);
     setIsTypingPassword(!!e.target.value);

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useSwipeable } from "react-swipeable";
+import HeroCards from "./HeroCards.jsx";
 import BouncingDotsLoader from "../../assets/svgJSX/BouncingDotsLoader.jsx";
 
 export default function HeroSection({ data }) {
@@ -55,67 +55,15 @@ export default function HeroSection({ data }) {
           <p className="text-sm md:text-lg mt-2">For creators</p>
         </div>
 
-        <div className="relative flex justify-center mt-12">
-          <div {...handlers} className="relative w-[90%] max-w-4xl h-[400px]">
-            <AnimatePresence mode="popLayout">
-              {getVisibleCards().map((card, i) => {
-                const isFront = i === 0;
-                const scale = 1 - 0.1 * i;
-                const translateY = i * -30;
-                const zIndex = cards.length - i;
-
-                return (
-                  <motion.div
-                    key={`${card.title}-${(index + i) % cards.length}`}
-                    className="absolute w-full h-full border-2 border-green-600 rounded-4xl overflow-hidden bg-white shadow-lg"
-                    initial={{
-                      opacity: 0,
-                      y:
-                        direction === "next"
-                          ? translateY + 40
-                          : translateY - 40,
-                      scale: scale - 0.05,
-                    }}
-                    animate={{
-                      opacity: isFront ? 1 : 0.5,
-                      y: translateY,
-                      scale: scale,
-                      zIndex,
-                    }}
-                    exit={{
-                      opacity: 0,
-                      y: direction === "next" ? -100 : 100,
-                      scale: 0.8,
-                    }}
-                    transition={{
-                      duration: 0.5,
-                      ease: "easeInOut",
-                    }}
-                    style={{ zIndex }}
-                  >
-                    <div className="grid md:grid-cols-2 h-full">
-                      <div className="p-6 flex flex-col justify-center">
-                        <h3 className="text-xl md:text-2xl font-bold text-black">
-                          {card.title}
-                        </h3>
-                        <p className="text-gray-700 mt-2">{card.description}</p>
-                        <Button className="mt-4 w-fit">Read More</Button>
-                      </div>
-                      <img
-                        src={card.image}
-                        alt="illustration"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </AnimatePresence>
-          </div>
-        </div>
+        <HeroCards
+          cards={cards}
+          index={index}
+          direction={direction}
+          getVisibleCards={getVisibleCards}
+        />
 
         <div className="flex justify-center space-x-4 mt-6">
-          <Button onClick={prevCard}>Previous</Button>
+          {/* <Button onClick={prevCard}>Previous</Button> */}
           <Button onClick={nextCard}>Next</Button>
         </div>
       </div>

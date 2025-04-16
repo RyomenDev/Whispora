@@ -2,7 +2,7 @@ const BouncingDotsLoader = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
     <circle
       fill="#51A9AB"
-      stroke="#ffffff"
+      stroke="#50C878"
       strokeWidth="30"
       r="15"
       cx="40"
@@ -20,7 +20,7 @@ const BouncingDotsLoader = () => (
     </circle>
     <circle
       fill="#51A9AB"
-      stroke="#ffffff"
+      stroke="#50C878"
       strokeWidth="30"
       r="15"
       cx="100"
@@ -38,7 +38,7 @@ const BouncingDotsLoader = () => (
     </circle>
     <circle
       fill="#51A9AB"
-      stroke="#ffffff"
+      stroke="#50C878"
       strokeWidth="30"
       r="15"
       cx="160"
