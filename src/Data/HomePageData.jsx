@@ -3,6 +3,7 @@ import Stairs from "../assets/images/Stairs.png";
 import Elevation from "../assets/images/Elevation.png";
 import Curtain from "../assets/images/Curtain.jpg";
 import waterDrop from "../assets/images/waterDrop.png";
+import { BlogDiscoverData as AllCards } from "./BlogDiscover.jsx";
 
 import { FaRobot, FaUserTie, FaBookOpen, FaChartLine } from "react-icons/fa";
 import {
@@ -23,43 +24,7 @@ const HomePageData = {
       "Join our community and get access to tailored mentorship, structured courses, and a supportive network to accelerate your career.",
     ctaText: "Get Started",
     ctaLink: "#",
-    cards: [
-      {
-        title: "12 Illustration Styles Every Illustrator Should Know",
-        description: "Lorem ipsum dolor sit amet consectetur...",
-        image: Stairs,
-        author: "Jane Doe",
-        tags: ["Illustration", "Design", "Art"],
-      },
-      {
-        title: "Mastering Digital Brushes",
-        description: "How to create texture and depth...",
-        image: Elevation,
-        author: "John Smith",
-        tags: ["Brushes", "Digital Art", "Tools"],
-      },
-      {
-        title: "Color Theory Basics",
-        description: "Understanding hues and contrast...",
-        image: Curtain,
-        author: "Emily Clark",
-        tags: ["Color", "Design", "Theory"],
-      },
-      {
-        title: "Theory Basics",
-        description: "Understanding hues and contrast...",
-        image: waterDrop,
-        author: "Alex Miller",
-        tags: ["Theory", "Colors", "Art"],
-      },
-      {
-        title: "Color",
-        description: "Understanding hues and contrast...",
-        image: Stairs,
-        author: "Sara Lee",
-        tags: ["Color", "Art", "Design"],
-      },
-    ],
+    cards: AllCards.slice(9, 13),
   },
 
   featuresData: [

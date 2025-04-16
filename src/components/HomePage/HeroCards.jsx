@@ -39,7 +39,7 @@ const HeroCards = ({ cards, index, direction, getVisibleCards }) => {
                 }}
                 style={{ zIndex }}
               >
-                <Card card={card} />
+                <Card card={card} index={i} />
               </motion.div>
             );
           })}

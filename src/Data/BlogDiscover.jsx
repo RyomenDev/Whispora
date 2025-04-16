@@ -8,6 +8,11 @@ import NodejsGraphQLImg from "../assets/Blogs/NodejsGraphQL.png";
 import ReactImg from "../assets/Blogs/React.png";
 import WebSocketsImg from "../assets/Blogs/WebSockets.png";
 
+import Stairs from "../assets/images/Stairs.png";
+import Elevation from "../assets/images/Elevation.png";
+import Curtain from "../assets/images/Curtain.jpg";
+import waterDrop from "../assets/images/waterDrop.png";
+
 const BlogDiscoverData = [
   {
     id: 1,
@@ -230,6 +235,86 @@ By the end of this blog, you'll have the knowledge needed to implement your own 
     isEditorPick: false,
     readingTime: "5 min",
     likes: 417,
+  },
+  {
+    id: 10,
+    title: "12 Illustration Styles Every Illustrator Should Know",
+    description: `**How AI Is Changing Web Development** explores how *Artificial Intelligence* is revolutionizing the landscape of web development. AI tools are increasingly helping developers streamline workflows, automate repetitive tasks, and improve productivity.
+
+Some key highlights include:
+- **AI-powered code suggestions**: Tools like GitHub Copilot and IntelliCode help automate code writing.
+- **Automated design systems**: AI-driven tools can suggest or even generate design components based on user needs.
+- **Smart testing tools**: AI optimizes testing by automatically finding bugs, ensuring faster delivery.
+
+The future of web development is heavily influenced by AI, and this blog dives deep into how developers can utilize these tools to stay ahead of the curve. Whether you’re a frontend or backend developer, integrating AI into your workflow will unlock new possibilities.`,
+    date: "April 10, 2025",
+    views: "14.2k",
+    category: "AI",
+    image: Stairs,
+    author: "Jane Doe",
+    tags: ["Illustration", "Design", "Art"],
+    readingTime: "5 min",
+    likes: 87,
+  },
+  {
+    id: 11,
+    title: "Mastering Digital Brushes",
+    description: `**Top 10 JavaScript Tricks for Developers** will level up your *JavaScript* skills with expert tricks. From advanced destructuring to optimizing your JavaScript code for better performance, these tips are essential for anyone looking to become a more efficient developer.
+
+Key tricks include:
+- **Advanced destructuring**: Unlock more readable and concise code.
+- **Memoization techniques**: Boost performance by avoiding unnecessary function calls.
+- **Optimizing loops**: Learn how to loop through large datasets efficiently.
+
+This blog also highlights common mistakes developers make and provides solutions to overcome them. Whether you’re new to JavaScript or an experienced developer, these tricks will elevate your coding game to the next level.`,
+    image: Elevation,
+    date: "March 28, 2025",
+    views: "11.6k",
+    category: "JavaScript",
+    author: "John Smith",
+    tags: ["Brushes", "Digital Art", "Tools"],
+    readingTime: "4 min",
+    likes: 178,
+  },
+  {
+    id: 12,
+    title: "Color Theory Basics",
+    description: `**Mastering React Performance Optimization** focuses on techniques for optimizing the performance of *React* applications. Slow performance in React apps can be a major issue, but with the right strategies, you can make your apps blazing fast and responsive.
+
+Topics covered include:
+- **Memoization**: Avoid unnecessary re-renders and enhance app performance.
+- **Lazy loading**: Load only the necessary components to reduce the initial loading time.
+- **Virtualization**: Efficiently render large lists and tables by only displaying visible items.
+
+React performance optimization is an essential skill, especially as your app grows in complexity. This blog provides real-world examples and practical solutions that you can apply today to improve your React apps.`,
+    image: Curtain,
+    date: "February 20, 2025",
+    views: "12.4k",
+    category: "React",
+    author: "Emily Clark",
+    tags: ["Color", "Design", "Theory"],
+    readingTime: "6 min",
+    likes: 128,
+  },
+  {
+    id: 13,
+    title: "Theory Basics",
+    description: `**Using AI to Generate Stunning Blog Images Automatically** introduces you to AI-driven tools that can generate eye-catching images for your blog posts, eliminating the need to manually search for stock photos or images.
+
+Key points discussed:
+- **DALL·E**: AI that creates unique images from text descriptions.
+- **Image generation APIs**: Tools that can automate the process of adding custom images to your posts.
+- **Cost savings**: By using AI, you save time and money spent on purchasing stock images.
+
+This blog will teach you how AI is revolutionizing content creation and how you can use it to improve your blog's visual appeal while saving time.`,
+    image: waterDrop,
+    date: "April 08, 2025",
+    views: "19.3k",
+    category: "AI Tools",
+    author: "Alex Miller",
+    tags: ["Theory", "Colors", "Art"],
+    readingTime: "3 min",
+    likes: 78,
   },
 ];
 
